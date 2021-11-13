@@ -1,0 +1,9 @@
+<mat-nav-list class="sidebar">
+  <a *ngFor="let item of buttons" [routerLink]="item.link" routerLinkActive="active-link">
+    <mat-icon class="material-icons-outlined">
+      {{item.icon}}
+    </mat-icon>
+    {{item.text}}
+  </a>
+
+</mat-nav-list>

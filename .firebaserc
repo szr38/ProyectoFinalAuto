@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "proyecto-led-cdae8": {
+      "hosting": {
+        "criptoCurrency": [
+          "proyecto-led-cdae8"
+        ]
+      }
+    }
+  }
+}

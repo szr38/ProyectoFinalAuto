@@ -1,0 +1,12 @@
+<div class="w-100 h-100">
+    <span>{{title}}</span>
+    <canvas baseChart
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [colors]="lineChartColors"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+          [options]="lineChartOptions"
+          [plugins]="lineChartPlugins">
+    </canvas>
+</div>

@@ -1,0 +1,9 @@
+<mat-drawer-container class="drawer-container">
+    <app-header-dashboard (openSidebar)="receiveMessage($event)"></app-header-dashboard>
+    <mat-drawer #sidenav class="sidenav" mode="side" [opened]="opened">
+        <app-sidebar></app-sidebar>
+    </mat-drawer>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+</mat-drawer-container>

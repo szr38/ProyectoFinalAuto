@@ -1,0 +1,38 @@
+<div class="d-flex flex-row justify-content-between" *ngIf="tankTwo">
+  <div class="test">
+    <div class="img3" [ngStyle]="{ 'height.%': (levelTank * 85) / 100 }"></div>
+    <img src="assets/img/tank.png" alt="" style="height: 490px" class="tank" />
+    <span class="inlet">Entrada: {{ tankTwo[0] }}</span>
+    <div class="porcentage">
+      <span>{{ levelTank }}%</span>
+      <span>{{ tankTwo[1] }}Lts</span>
+    </div>
+    <span class="outlet">Salida: {{ tankTwo[2] }}</span>
+  </div>
+
+  <div style="width: 60%" class="d-flex flex-column pump">
+    <div style="border: solid 1px black; width: 50%;">
+      <app-graphic
+        [var]="graphLevelTank.level"
+        [hour]="graphLevelTank.hour"
+        title="Nivel de tanque"
+      ></app-graphic>
+    </div>
+
+    <div class="pump">
+      <div>
+        <img src="assets/img/pressure.png" alt="" >
+        <span class="pressure">{{pumpTwo[1]}}</span>
+      </div>
+      <div>
+        <img src="assets/img/RPM.png" alt="" >
+        <span class="rpm">{{pumpTwo[2]}}</span>
+      </div>
+      <div>
+        <img src="assets/img/temp.png" alt="" >
+        <span class="temp">{{pumpTwo[3]}}</span>
+      </div>
+    </div>
+    <img src="assets/img/pump.png" alt="" style="width: 300px;">
+  </div>
+</div>
