@@ -2,7 +2,7 @@
   "targets": {
     "proyecto-led-cdae8": {
       "hosting": {
-        "criptoCurrency": [
+        "ProyectoFinalAuto": [
           "proyecto-led-cdae8"
         ]
       }

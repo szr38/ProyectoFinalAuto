@@ -1,8 +1,8 @@
 {
   "hosting": [
     {
-      "target": "criptoCurrency",
-      "public": "dist/criptoCurrency",
+      "target": "ProyectoFinalAuto",
+      "public": "dist/ProyectoFinalAuto",
       "ignore": [
         "**/.*"
       ],
